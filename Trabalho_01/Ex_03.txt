@@ -1,0 +1,44 @@
+Empilha(p, 'b') -> pilha não está cheia
+pilha: [ b ]
+Imprime(p) -> [ b ]
+Empilha(p, 's')
+pilha: [ s, b, ]
+Empilha(p, 'a')
+pilha: [ a, s, b ]
+Empilha(p, 'c')
+pilha: [ c, a, s, b ]
+Desempilha(p) -> 'c'
+pilha: [ a, s, b ]
+Desempilha(p) -> 'a'
+pilha: [ s, b ]
+Empilha(p, 'h')
+pilha: [ h, s, b ]
+Empilha(p, 'd')
+pilha: [ d, h, s, b ]
+Empilha(p, 'f')
+pilha: [ f, d, h, s, b ]
+Desempilha(p) -> 'f'
+pilha: [ d, h, s, b ]
+Empilha(p, 'n')
+pilha: [ n, d, h, s, b ]
+Empilha(p, 'b')
+pilha: [ b, n, d, h, s ]
+pilha está cheia
+Desempilha(p) -> 'b'
+pilha: [ n, d, h, s ]
+Empilha(p, 'm')
+pilha: [ m, n, d, h, s ]
+Desempilha(p) -> 'm'
+pilha: [ n, d, h, s ]
+Desempilha(p) -> 'n'
+pilha: [ d, h, s ]
+Desempilha(p) -> 'd'
+pilha: [ h, s ]
+Desempilha(p) -> 'h'
+pilha: [ s ]
+Imprime(p) -> [ s ]
+pilha está vazia
+No vídeo, seria impresso: [ b ] [ s, b ] [ a, s, b ]
+ [ c, a, s, b ] [ a, s, b ] [ s, b ] [ h, s, b ] [ d, h, s, b ] 
+[ f, d, h, s, b ] [ n, d, h, s, b ] [ b, n, d, h, s ] [ m, n, d, h, s ]
+ [ n, d, h, s ] [ d, h, s ] [ h, s ] [ s ]
